@@ -141,6 +141,7 @@ Challenge 2
  - Response Status: 200 OK
  
  <img src="images/ch2Result.png" width="600px">
+
  
  Challenge 4
  ----
