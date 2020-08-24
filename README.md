@@ -187,3 +187,11 @@ Challenge 2
  - Response Status: 400 Bad Request
  
  <img src="images/ch4Result4.png" width="600px">
+
+ <b>Postman Test Example 5  - Invalid Grade value Test </b>
+ 
+ - Request URL: /api/Grades/{"StudentID":3,"CourseID":4022,"Grade":5.50}
+  
+ - Response Status: 400 Bad Request
+ 
+ <img src="images/ch4Result5.png" width="600px">
