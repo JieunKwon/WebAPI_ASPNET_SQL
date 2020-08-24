@@ -42,9 +42,7 @@ Environment
 Database and Models
 ----
 
-SCHOOL database
-
-The schema shown below and the test data are provided.
+SCHOOL database schema shown below and the test data are provided.
  
 <img src="images/db_schema.png">
 
@@ -148,9 +146,18 @@ Challenge 2
  
  <b> Task </b>
  
+ "`
  - HTTP Request: POST/Grades/{studentGrade}
  
  - Response: Add an endpoint for new Student grade with input data validation 
+
+ - Additional requirements:
+
+	studentId must be a valid student ID.
+	courseId must be a valid course ID.
+	grade must be null or a numeric value between 0.00 and 4.00 inclusive.
+	A student may only have 1 grade per course.
+ "`
  
  <b> Solution files</b>
  
