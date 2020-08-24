@@ -72,18 +72,60 @@ Special GPA calculator module is in the Libraries directory.
  ----
  
  <Task>
+ 
  - HPPT Request: GET/Student/{studentId}
+ 
  - Response: Add an endpoint for Student information, the calculated GPA, and the grade details
  
  <Solution files>
+ 
  - Controllers/StudentController.cs
- - Libraries/CalculateGpa.cs
- - Entities/Student.cs
- - Entities/StudentTranscript.cs
-  
- <GPA calculation>
+ 
  - Libraries/CalculateGpa.cs
  
- <Test>
+ - Entities/Student.cs
+ 
+ - Entities/StudentTranscript.cs
+  
+ - Libraries/CalculateGpa.cs
+ 
+ <Postman Test Example>
+ 
+ Request URL:
+ 
+ http://localhost:60789/api/Student?studentId=2
+ 
+ Response Status: 200 OK
+ 
  <img src="images/ch1Result.png" width="600px">
+ 
+
+Challenge 2
+ ----
+ 
+ <Task>
+ 
+ - HPPT Request: GET/Students
+ 
+ - Response: Add an endpoint for all Students' information and their calculated GPA 
+ 
+ <Solution files>
+ 
+ - Controllers/StudentsController.cs
+ 
+ - Libraries/CalculateGpa.cs
+ 
+ - Entities/Student.cs
+  
+ - Libraries/CalculateGpa.cs
+ 
+ <Postman Test Example>
+ 
+ Request URL:
+ 
+ http://localhost:60789/api/Students
+ 
+ Response Status: 200 OK
+ 
+ <img src="images/ch2Result.png" width="600px">
  
