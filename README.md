@@ -63,21 +63,24 @@ Solution Code Files and Directories
 ----
 
 Most of API controller files are in the Controllers directory.
+
 All Models of data context are in the Models directory and these are all auto-geralated.
+
 As a data transfer object, used additional data entities. These are in the Entities directory.
+
 Special GPA calculator module is in the Libraries directory.
 
 
  Challenge 1
  ----
  
- <Task>
+ <b> Task </b>
  
  - HPPT Request: GET/Student/{studentId}
  
  - Response: Add an endpoint for Student information, the calculated GPA, and the grade details
  
- <Solution files>
+ <b> Solution files</b>
  
  - Controllers/StudentController.cs
  
@@ -89,27 +92,33 @@ Special GPA calculator module is in the Libraries directory.
   
  - Libraries/CalculateGpa.cs
  
- <Postman Test Example>
+ <b>Postman Test Example 1 </b>
  
- Request URL:
- 
- http://localhost:60789/api/Student?studentId=2
+ Request URL: /api/Student?studentId=2
  
  Response Status: 200 OK
  
  <img src="images/ch1Result.png" width="600px">
  
-
+ <b>Postman Test Example 2   </b>
+ 
+ Request URL: /api/Student?studentId=4
+ 
+ Response Status: 404 Not Found
+ 
+ <img src="images/ch1Result2.png" width="600px">
+ 
+ 
 Challenge 2
  ----
  
- <Task>
+ <b>Task</b>
  
  - HPPT Request: GET/Students
  
  - Response: Add an endpoint for all Students' information and their calculated GPA 
  
- <Solution files>
+ <b>Solution files</b>
  
  - Controllers/StudentsController.cs
  
@@ -119,13 +128,55 @@ Challenge 2
   
  - Libraries/CalculateGpa.cs
  
- <Postman Test Example>
+ <b>Postman Test Example</b>
  
- Request URL:
- 
- http://localhost:60789/api/Students
+ Request URL : /api/Students
  
  Response Status: 200 OK
  
  <img src="images/ch2Result.png" width="600px">
  
+ Challenge 4
+ ----
+ 
+ <b> Task </b>
+ 
+ - HPPT Request: POST/Grades/{studentGrade}
+ 
+ - Response: Add an endpoint for new Student grade 
+ 
+ <b> Solution files</b>
+ 
+ - Controllers/Grades.cs  
+ 
+ <b>Postman Test Example 1 - Data Creation Test </b>
+ 
+ Request URL: /api/Grades/{"StudentID":2,"CourseID":4061,"Grade":4.00}
+ 
+ Response Status: 201 Created
+ 
+ <img src="images/ch4Result.png" width="600px">
+ 
+ <b>Postman Test Example 2 - Model Validation Error Test  </b>
+ 
+ Request URL: /api/Grades/{"StudentID":2,"CourseID":4061,"Grade":4.00}
+ 
+ Response Status: 400 Bad Request
+ 
+ <img src="images/ch1Result2.png" width="600px">
+ 
+ <b>Postman Test Example 3  - Invalid Data Test </b>
+ 
+ Request URL: /api/Grades/{"StudentID":2,"CourseID":4061,"Grade":4.00}
+ 
+ Response Status: 400 Bad Request
+ 
+ <img src="images/ch1Result3.png" width="600px">
+ 
+ <b>Postman Test Example 4  - Exist Data Test </b>
+ 
+ Request URL: /api/Grades/{"StudentID":2,"CourseID":4061,"Grade":4.00}
+ 
+ Response Status: 400 Bad Request
+ 
+ <img src="images/ch1Result4.png" width="600px">
