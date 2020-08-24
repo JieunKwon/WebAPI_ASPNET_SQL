@@ -13,11 +13,11 @@ The project to build Web API for Call em All Coding challenge
 
 <a href="#Challenge-1">* Challenge 1</a>
 
-<a href="#Challenge">* Challenge 2</a>
+<a href="#Challenge-2">* Challenge 2</a>
 
-<a href="#Challenge">* Challenge 3</a>
+<a href="#Challenge-3">* Challenge 3</a>
  
-<a href="#Challenge">* Challenge 4</a>
+<a href="#Challenge-4">* Challenge 4</a>
 
 
 
@@ -25,14 +25,18 @@ Description
 ----
  
 This API is to create ASP.NET Web API using SQL server database. 
+
 Accoring to HTTP request such as GET and POST, the endpoint return the appropriate HTTP status code and the JSON data. 
+
 The first two challenges are related to GET request to retrive Student Grades and the finally calculated GPA. Next task is to add a student grade with the valid data.  
 
-Environment setup
+Environment 
 ----
 
 - Visual Studio 2017 
+
 - .NET Framework 4.8
+
 - SQL Server 2017
 
 Database and Setup
@@ -45,7 +49,9 @@ The schema shown below and the test data are provided.
 <img src="images/db_schema.png">
 
 After creating database to SQL Server, added ADO.NET Entity Data Model to the project.
+
 Connection String is named SchoolDBContext. (Web.config)
+
 Generated Models for all data entities is shown below.
 
 <img src="images/dbModel.png" width="400px">
@@ -94,17 +100,17 @@ Special GPA calculator module is in the Libraries directory.
  
  <b>Postman Test Example 1 </b>
  
- Request URL: /api/Student?studentId=2
+ - Request URL: /api/Student?studentId=2
  
- Response Status: 200 OK
+ - Response Status: 200 OK
  
  <img src="images/ch1Result.png" width="600px">
  
  <b>Postman Test Example 2   </b>
  
- Request URL: /api/Student?studentId=4
+ - Request URL: /api/Student?studentId=4
  
- Response Status: 404 Not Found
+ - Response Status: 404 Not Found
  
  <img src="images/ch1Result2.png" width="600px">
  
@@ -130,9 +136,9 @@ Challenge 2
  
  <b>Postman Test Example</b>
  
- Request URL : /api/Students
+ - Request URL : /api/Students
  
- Response Status: 200 OK
+ - Response Status: 200 OK
  
  <img src="images/ch2Result.png" width="600px">
  
@@ -151,32 +157,32 @@ Challenge 2
  
  <b>Postman Test Example 1 - Data Creation Test </b>
  
- Request URL: /api/Grades/{"StudentID":2,"CourseID":4061,"Grade":4.00}
+ - Request URL: /api/Grades/{"StudentID":2,"CourseID":4061,"Grade":4.00}
  
- Response Status: 201 Created
+ - Response Status: 201 Created
  
  <img src="images/ch4Result.png" width="600px">
  
  <b>Postman Test Example 2 - Model Validation Error Test  </b>
  
- Request URL: /api/Grades/{"StudentID":2,"CourseID":4061,"Grade":4.00}
+ - Request URL: /api/Grades/{"StudentID":invalid_string_data,"CourseID":4061,"Grade":4.00}
  
- Response Status: 400 Bad Request
+ - Response Status: 400 Bad Request
  
- <img src="images/ch1Result2.png" width="600px">
+ <img src="images/ch4Result2.png" width="600px">
  
  <b>Postman Test Example 3  - Invalid Data Test </b>
  
- Request URL: /api/Grades/{"StudentID":2,"CourseID":4061,"Grade":4.00}
+ - Request URL: /api/Grades/{"StudentID":1,"CourseID":4061,"Grade":4.00}
  
- Response Status: 400 Bad Request
+ - Response Status: 400 Bad Request
  
- <img src="images/ch1Result3.png" width="600px">
+ <img src="images/ch4Result3.png" width="600px">
  
  <b>Postman Test Example 4  - Exist Data Test </b>
  
- Request URL: /api/Grades/{"StudentID":2,"CourseID":4061,"Grade":4.00}
+ - Request URL: /api/Grades/{"StudentID":2,"CourseID":2021,"Grade":4.00}
  
- Response Status: 400 Bad Request
+ - Response Status: 400 Bad Request
  
- <img src="images/ch1Result4.png" width="600px">
+ <img src="images/ch4Result4.png" width="600px">
