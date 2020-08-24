@@ -158,7 +158,7 @@ Challenge 2
  
  - Response: Add an endpoint for new Student grade with input data validation 
 
- - Additional requirements:
+ - Additional requirements:  
 	studentId must be a valid student ID.  
 	courseId must be a valid course ID.  
 	grade must be null or a numeric value between 0.00 and 4.00 inclusive.  
