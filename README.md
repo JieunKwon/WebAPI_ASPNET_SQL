@@ -7,7 +7,7 @@ The project to build Web API for Call em All Coding challenge
 
 <a href="#Environment">2. Environment</a>
 
-<a href="#Database">3. Database</a>
+<a href="#Database-and-Models">3. Database and Models</a>
 
 <a href="#Test-Tool">4. Test Tool </a>
 
@@ -39,7 +39,7 @@ Environment
 
 - SQL Server 2017
 
-Database and Setup
+Database and Models
 ----
 
 SCHOOL database
@@ -82,7 +82,7 @@ Special GPA calculator module is in the Libraries directory.
  
  <b> Task </b>
  
- - HPPT Request: GET/Student/{studentId}
+ - HTTP Request: GET/Student/{studentId}
  
  - Response: Add an endpoint for Student information, the calculated GPA, and the grade details
  
@@ -120,7 +120,7 @@ Challenge 2
  
  <b>Task</b>
  
- - HPPT Request: GET/Students
+ - HTTP Request: GET/Students
  
  - Response: Add an endpoint for all Students' information and their calculated GPA 
  
@@ -147,9 +147,9 @@ Challenge 2
  
  <b> Task </b>
  
- - HPPT Request: POST/Grades/{studentGrade}
+ - HTTP Request: POST/Grades/{studentGrade}
  
- - Response: Add an endpoint for new Student grade 
+ - Response: Add an endpoint for new Student grade with input data validation 
  
  <b> Solution files</b>
  
@@ -165,7 +165,7 @@ Challenge 2
  
  <b>Postman Test Example 2 - Model Validation Error Test  </b>
  
- - Request URL: /api/Grades/{"StudentID":invalid_string_data,"CourseID":4061,"Grade":4.00}
+ - Request URL: /api/Grades/{"StudentID":invalid_string_data,"CourseID":2042,"Grade":4.00}
  
  - Response Status: 400 Bad Request
  
@@ -173,7 +173,7 @@ Challenge 2
  
  <b>Postman Test Example 3  - Invalid Data Test </b>
  
- - Request URL: /api/Grades/{"StudentID":1,"CourseID":4061,"Grade":4.00}
+ - Request URL: /api/Grades/{"StudentID":1,"CourseID":2021,"Grade":4.00}
  
  - Response Status: 400 Bad Request
  
