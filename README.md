@@ -80,7 +80,7 @@ Special GPA calculator module is in the Libraries directory.
  
  <b> Task </b>
 
-  ¡°` 
+â€œ`
  - HTTP Request: GET/Student/{studentId}
  
  - Response: Add an endpoint for Student information, the calculated GPA, and the grade details
@@ -90,7 +90,7 @@ Special GPA calculator module is in the Libraries directory.
 	The endpoint should return the JSON shown below.
 	Do not include NULL grades.
 	The GPA is not stored in the database, so it must be calculated. For this challenge, calculate the GPA in C# code.
- ¡°`
+ â€œ`
  
  <b> Solution files</b>
  
@@ -126,11 +126,11 @@ Challenge 2
  
  <b>Task</b>
 
-  ¡°`
+â€œ`
  - HTTP Request: GET/Students
  
  - Response: Add an endpoint for all Students' information and their calculated GPA 
-  ¡°`
+â€œ`
  
  <b>Solution files</b>
  
@@ -156,7 +156,7 @@ Challenge 2
  
  <b> Task </b>
 
- ¡°`
+ â€œ`
  - HTTP Request: POST/Grades/{studentGrade}
  
  - Response: Add an endpoint for new Student grade with input data validation 
@@ -166,7 +166,7 @@ Challenge 2
 	courseId must be a valid course ID.
 	grade must be null or a numeric value between 0.00 and 4.00 inclusive.
 	A student may only have 1 grade per course.
- ¡°`
+ â€œ`
  
  <b> Solution files</b>
  
