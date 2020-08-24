@@ -79,18 +79,18 @@ Special GPA calculator module is in the Libraries directory.
  ----
  
  <b> Task </b>
-
-“`
+ 
  - HTTP Request: GET/Student/{studentId}
  
  - Response: Add an endpoint for Student information, the calculated GPA, and the grade details
 
  - Additional requirement:
-	If the ID provided does not exist or is not for a student, return the appropriate HTTP status code.
-	The endpoint should return the JSON shown below.
-	Do not include NULL grades.
-	The GPA is not stored in the database, so it must be calculated. For this challenge, calculate the GPA in C# code.
- “`
+ 
+	If the ID provided does not exist or is not for a student, return the appropriate HTTP status code.  
+	The endpoint should return the JSON shown below.  
+	Do not include NULL grades.  
+	The GPA is not stored in the database, so it must be calculated. For this challenge, calculate the GPA in C# code.  
+
  
  <b> Solution files</b>
  
@@ -126,11 +126,9 @@ Challenge 2
  
  <b>Task</b>
 
-“`
  - HTTP Request: GET/Students
  
  - Response: Add an endpoint for all Students' information and their calculated GPA 
-“`
  
  <b>Solution files</b>
  
@@ -156,18 +154,17 @@ Challenge 2
  
  <b> Task </b>
 
- “`
  - HTTP Request: POST/Grades/{studentGrade}
  
  - Response: Add an endpoint for new Student grade with input data validation 
 
  - Additional requirements:
-	studentId must be a valid student ID.
-	courseId must be a valid course ID.
-	grade must be null or a numeric value between 0.00 and 4.00 inclusive.
-	A student may only have 1 grade per course.
- “`
- 
+	studentId must be a valid student ID.  
+	courseId must be a valid course ID.  
+	grade must be null or a numeric value between 0.00 and 4.00 inclusive.  
+	A student may only have 1 grade per course.  
+
+
  <b> Solution files</b>
  
  - Controllers/Grades.cs  
