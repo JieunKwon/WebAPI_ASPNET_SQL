@@ -48,7 +48,7 @@ After creating database to SQL Server, added ADO.NET Entity Data Model to the pr
 Connection String is named SchoolDBContext. (Web.config)
 Generated Models for all data entities is shown below.
 
-<img src="images/dbModel.png" width="600px">
+<img src="images/dbModel.png" width="400px">
 
 Test Tool
 ----
@@ -56,6 +56,8 @@ Test Tool
 To run the API, installed Postman.
 
 https://www.postman.com/
+
+<img src="images/postman.png" width="600px">
 
 Solution Code Files and Directories
 ----
@@ -83,5 +85,5 @@ Special GPA calculator module is in the Libraries directory.
  - Libraries/CalculateGpa.cs
  
  <Test>
- <img src="ch1Result.png" width="600px">
+ <img src="images/ch1Result.png" width="600px">
  
