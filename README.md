@@ -218,7 +218,7 @@ Challenge 2
 <b>Challenge 4 Status Test  </b>  
 <img src="images/postTest.png" width="600px">  
 
- <b>Postman Tests Script</b>  
- <img src="images/postTest2.png" width="600px">
+ <b>Postman Collections Test and Result</b>  
+ <img src="images/postTest2.png" >
 
-  <img src="images/postTest3.png" width="600px">
+  <img src="images/postTest3.png" >
