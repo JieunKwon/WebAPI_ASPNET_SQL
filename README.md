@@ -11,15 +11,15 @@ The project to build Web API for Call em All Coding challenge
 
 <a href="#Test-Tool">4. Test Tool </a>
 
-<a href="#Challenge-1">* Challenge 1</a>
+<a href="#Challenge-1">5. Challenge 1</a>
 
-<a href="#Challenge-2">* Challenge 2</a>
+<a href="#Challenge-2">6. Challenge 2</a>
 
-<a href="#Challenge-3">* Challenge 3</a>
+<a href="#Challenge-3">7. Challenge 3</a>
  
-<a href="#Challenge-4">* Challenge 4</a>
+<a href="#Challenge-4">8. Challenge 4</a>
 
-
+<a href="#Postman-Collections-Test">9. Postman Collections Test</a>
 
 Description
 ----
@@ -208,3 +208,17 @@ Challenge 2
  - Response Status: 400 Bad Request
  
  <img src="images/ch4Result5.png" width="600px">
+
+  
+ Postman Collections Test
+ ----
+
+ Using Tests Script, can do unit test and collections test. 
+
+<b>Challenge 4 Status Test  </b>  
+<img src="images/postTest.png" width="600px">  
+
+ <b>Postman Tests Script</b>  
+ <img src="images/postTest2.png" width="600px">
+
+  <img src="images/postTest3.png" width="600px">
