@@ -148,7 +148,36 @@ Challenge 2
  
  <img src="images/ch2Result.png" width="600px">
 
+ Challenge 3
+ ----
  
+ <b> Task </b>
+
+ Assuming the database is currently in use, modify the StudentGrade table to enforce the following rules: 
+
+If not NULL, Grade must be a value between 0.00 and 4.00 inclusive.  
+The combination of CourseID and StudentID must be unique.  
+ 
+ <b>Approach </b>  
+
+ For the request action, used GET request. Then show the result how many rows update.
+ The duplicated rows with the same CourseID and StudentID will be deleted.  
+ If the grade is less than 0, it will be updated to 0.00. If above than 4, it will be updated to 4.00.  
+
+  
+ <b> Solution files</b>
+  
+ - Controllers/StudentGradesController.cs  
+ 
+ <b>Postman Test Example 1 - Data Update Test </b>
+ 
+ - Request URL: GET: /api/StudentGrades
+ 
+ - Response Status: 200 OK
+ 
+ <img src="images/ch3Result.png" width="600px">
+
+
  Challenge 4
  ----
  
@@ -167,7 +196,7 @@ Challenge 2
 
  <b> Solution files</b>
  
- - Controllers/Grades.cs  
+ - Controllers/GradesController.cs  
  
  <b>Postman Test Example 1 - Data Creation Test </b>
  
@@ -218,7 +247,8 @@ Challenge 2
 <b>Challenge 4 Status Test  </b>  
 <img src="images/postTest.png" width="600px">  
 
- <b>Postman Collections Test and Result</b>  
+ <b>Postman Collections Test and Result</b> 
+
  <img src="images/postTest2.png" >
 
   <img src="images/postTest3.png" >
