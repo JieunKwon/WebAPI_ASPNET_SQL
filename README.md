@@ -12,7 +12,7 @@ ASP.NET Web API + SQL Server
 
 <a href="#Test-Tool">4. Test Tool </a>
 
-<a href="#GET--{ID}">5. GET : {ID}</a>
+<a href="#GET--ID">5. GET : {ID}</a>
 
 <a href="#GET--ALL">6. GET : ALL</a>
 
