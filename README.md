@@ -12,14 +12,12 @@ ASP.NET Web API + SQL Server
 
 <a href="#Test-Tool">4. Test Tool </a>
 
-<a href="#Challenge-1">5. Challenge 1</a>
+<a href="#GET-ID">5. GET : ID</a>
 
-<a href="#Challenge-2">6. Challenge 2</a>
+<a href="#GET-:-ALL">6. GET : ALL</a>
 
-<a href="#Challenge-3">7. Challenge 3</a>
- 
-<a href="#Challenge-4">8. Challenge 4</a>
-
+<a href="#POST">7. POST </a>
+  
 <a href="#Postman-Collections-Test">9. Postman Collections Test</a>
 
 Description
@@ -76,7 +74,7 @@ As a data transfer object, used additional data entities. These are in the Entit
 Special GPA calculator module is in the Libraries directory.
 
 
- Challenge 1
+ GET : ID
  ----
  
  <b> Task </b>
@@ -122,7 +120,7 @@ Special GPA calculator module is in the Libraries directory.
  <img src="images/ch1Result2.png" width="600px">
  
  
-Challenge 2
+GET : ALL
  ----
  
  <b>Task</b>
@@ -148,38 +146,8 @@ Challenge 2
  - Response Status: 200 OK
  
  <img src="images/ch2Result.png" width="600px">
-
- Challenge 3
- ----
  
- <b> Task </b>
-
- Assuming the database is currently in use, modify the StudentGrade table to enforce the following rules: 
-
-If not NULL, Grade must be a value between 0.00 and 4.00 inclusive.  
-The combination of CourseID and StudentID must be unique.  
- 
- <b>Approach </b>  
-
- For the request action, used GET request. Then show the result how many rows update.
- The duplicated rows with the same CourseID and StudentID will be deleted.  
- If the grade is less than 0, it will be updated to 0.00. If above than 4, it will be updated to 4.00.  
-
-  
- <b> Solution files</b>
-  
- - Controllers/StudentGradesController.cs  
- 
- <b>Postman Test Example 1 - Data Update Test </b>
- 
- - Request URL: GET: /api/StudentGrades
- 
- - Response Status: 200 OK
- 
- <img src="images/ch3Result.png" width="600px">
-
-
- Challenge 4
+ POST
  ----
  
  <b> Task </b>
