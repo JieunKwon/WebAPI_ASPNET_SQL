@@ -1,7 +1,8 @@
 # WebAPI_ASPNET_SQL
-The project to build Web API for Call em All Coding challenge
 
-@ Task on August 21, 2020 ~ August 23, 2020
+ASP.NET Web API + SQL Server
+
+@ August 23, 2020
 
 <a href="#Description">1. Description</a>
 
